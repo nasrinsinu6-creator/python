@@ -1,0 +1,129 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "ab7f867d-378b-4332-b981-b7b473244361",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any numbers separated by commas 4,8,4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List one is: [4, 8, 4]\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any numbers separated by commas 3,9,8\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List two is: [3, 9, 8]\n",
+      "List one and two have same length\n",
+      "Sum of two lists are not same\n",
+      "there is common value occur  in both list {8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#check legth ,sum and any valuye is same in two lists\n",
+    "\n",
+    "num=input(\"enter any numbers separated by commas\").split(\",\")\n",
+    "list1=list(map(int,num))\n",
+    "print(\"List one is:\",list1)\n",
+    "num2=input(\"enter any numbers separated by commas\").split(\",\")\n",
+    "list2=list(map(int,num2))\n",
+    "print(\"List two is:\",list2)\n",
+    "if len(list1) == len(list2):\n",
+    "    print(\"List one and two have same length\")\n",
+    "else:\n",
+    "    print(\"length of list one two not same\")\n",
+    "\n",
+    "if sum(list1) == sum(list2):\n",
+    "    print(\"Sum of 2 lists are same\")\n",
+    "else:\n",
+    "    print(\"Sum of two lists are not same\")\n",
+    "common_value=set(list1) & set(list2)   \n",
+    "if common_value:\n",
+    "    print(\"there is common value occur  in both list\",common_value)\n",
+    "else:\n",
+    "    print(\"there is no any common value occur  in both list\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "520828ea-2598-4b81-a731-2f3c0eb68b21",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any words running\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The word is : runningly\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Add ‘ing’ at the end of a given string. If it already ends with ‘ing’, then add ‘ly’\n",
+    "words=input(\"enter any words\")\n",
+    "if words.endswith(\"ing\"):\n",
+    "    words=words+\"ly\"\n",
+    "    print(\"The word is :\",words)\n",
+    "else:\n",
+    "    words=words+\"ing\"\n",
+    "\n",
+    "    print(\"The word is:\",words)    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "82a48e86-7ae2-48a4-b043-7faf8d821c1c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
