@@ -1,0 +1,4 @@
+Name=Sinu Nasrin
+Age=21
+Roll no=26
+place =karanthur
